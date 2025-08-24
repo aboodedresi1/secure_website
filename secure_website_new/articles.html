@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المقالات - SecureAware Pro</title>
+    <meta name="description" content="مجموعة شاملة من المقالات التعليمية حول الأمان الرقمي وحماية البيانات والخصوصية الإلكترونية">
+    <meta name="keywords" content="مقالات الأمان الرقمي, حماية البيانات, الخصوصية الإلكترونية, الأمن السيبراني">
+    
+    <!-- Bootstrap 5 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-theme="light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shield-alt me-2"></i>
+                <span class="brand-text">SecureAware Pro</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="articles.html">المقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="email-security.html">حماية الإيميل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="password-security.html">كلمات المرور</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ai-privacy.html">مخاطر الذكاء الاصطناعي</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-nav">
+                    <button class="btn btn-outline-primary me-2" id="themeToggle">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Articles Header -->
+    <header class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="hero-title" data-aos="fade-up">مكتبة المقالات التعليمية</h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        مجموعة شاملة من المقالات المتخصصة في الأمان الرقمي وحماية البيانات
+                    </p>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                        تعلم كيفية حماية نفسك وبياناتك في العالم الرقمي من خلال مقالاتنا المفصلة والمحدثة باستمرار. نغطي جميع جوانب الأمان الرقمي من الأساسيات إلى المواضيع المتقدمة.
+                    </p>
+                    
+                    <!-- Search Box -->
+                    <div class="search-container" data-aos="fade-up" data-aos-delay="600">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="searchInput" placeholder="ابحث في المقالات...">
+                            <button class="btn btn-primary" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="hero-image" data-aos="fade-left" data-aos-delay="800">
+                        <img src="assets/images/hero-security.jpg" alt="الأمان الرقمي" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter Tabs -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center mb-5" id="articleTabs" data-aos="fade-up">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-filter="all">جميع المقالات</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-filter="email">حماية الإيميل</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-filter="password">كلمات المرور</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-filter="ai">الذكاء الاصطناعي</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-filter="general">عام</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="articles py-5">
+        <div class="container">
+            <div class="row" id="articlesGrid">
+                <!-- Email Security Article -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="email" data-aos="fade-up">
+                    <article class="article-card hover-lift">
+                        <div class="article-image">
+                            <img src="assets/images/articles/email-protection.png" alt="حماية البريد الإلكتروني">
+                            <div class="article-category">حماية الإيميل</div>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="email-security.html">الدليل الشامل لحماية البريد الإلكتروني من التهديدات السيبرانية</a>
+                            </h3>
+                            <p class="article-excerpt">
+                                تعلم كيفية حماية بريدك الإلكتروني من الاختراق والتصيد الاحتيالي والبرمجيات الخبيثة. دليل شامل يغطي جميع جوانب أمان البريد الإلكتروني.
+                            </p>
+                            <div class="article-meta">
+                                <span class="article-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    24 أغسطس 2025
+                                </span>
+                                <span class="article-read-time">
+                                    <i class="fas fa-clock"></i>
+                                    15 دقيقة قراءة
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Password Security Article -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="password" data-aos="fade-up" data-aos-delay="200">
+                    <article class="article-card hover-lift">
+                        <div class="article-image">
+                            <img src="assets/images/articles/password-protection.png" alt="كلمات المرور القوية">
+                            <div class="article-category">كلمات المرور</div>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="password-security.html">إنشاء كلمات مرور قوية وآمنة: الدليل الكامل</a>
+                            </h3>
+                            <p class="article-excerpt">
+                                اكتشف أسرار إنشاء كلمات مرور لا يمكن اختراقها واستخدام مديري كلمات المرور والمصادقة الثنائية لحماية حساباتك.
+                            </p>
+                            <div class="article-meta">
+                                <span class="article-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    23 أغسطس 2025
+                                </span>
+                                <span class="article-read-time">
+                                    <i class="fas fa-clock"></i>
+                                    12 دقيقة قراءة
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- AI Privacy Article -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="ai" data-aos="fade-up" data-aos-delay="400">
+                    <article class="article-card hover-lift">
+                        <div class="article-image">
+                            <img src="assets/images/articles/ai-privacy.png" alt="مخاطر الذكاء الاصطناعي">
+                            <div class="article-category">الذكاء الاصطناعي</div>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="ai-privacy.html">مخاطر نشر الصور على مواقع الذكاء الاصطناعي</a>
+                            </h3>
+                            <p class="article-excerpt">
+                                تعرف على المخاطر الحقيقية لنشر صورك الشخصية على مواقع الذكاء الاصطناعي وكيفية حماية خصوصيتك وهويتك الرقمية.
+                            </p>
+                            <div class="article-meta">
+                                <span class="article-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    22 أغسطس 2025
+                                </span>
+                                <span class="article-read-time">
+                                    <i class="fas fa-clock"></i>
+                                    18 دقيقة قراءة
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Additional Articles (Placeholders) -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="general" data-aos="fade-up" data-aos-delay="600">
+                    <article class="article-card hover-lift">
+                        <div class="article-image">
+                            <img src="assets/images/hero-security.jpg" alt="أساسيات الأمان الرقمي">
+                            <div class="article-category">عام</div>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="#">أساسيات الأمان الرقمي للمبتدئين</a>
+                            </h3>
+                            <p class="article-excerpt">
+                                دليل شامل للمبتدئين يغطي أساسيات الأمان الرقمي وكيفية حماية أنفسهم من التهديدات الإلكترونية الشائعة.
+                            </p>
+                            <div class="article-meta">
+                                <span class="article-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    21 أغسطس 2025
+                                </span>
+                                <span class="article-read-time">
+                                    <i class="fas fa-clock"></i>
+                                    10 دقائق قراءة
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-category="general" data-aos="fade-up" data-aos-delay="800">
+                    <article class="article-card hover-lift">
+                        <div class="article-image">
+                            <img src="assets/images/hero-security.jpg" alt="حماية الشبكات المنزلية">
+                            <div class="article-category">عام</div>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="#">كيفية حماية شبكة الواي فاي المنزلية</a>
+                            </h3>
+                            <p class="article-excerpt">
+                                تعلم كيفية تأمين شبكة الواي فاي المنزلية وحمايتها من المتطفلين والهجمات الإلكترونية المختلفة.
+                            </p>
+                            <div class="article-meta">
+                                <span class="article-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    20 أغسطس 2025
+                                </span>
+                                <span class="article-read-time">
+                                    <i class="fas fa-clock"></i>
+                                    8 دقائق قراءة
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-category="general" data-aos="fade-up" data-aos-delay="1000">
+                    <article class="article-card hover-lift">
+                        <div class="article-image">
+                            <img src="assets/images/hero-security.jpg" alt="الأمان على وسائل التواصل">
+                            <div class="article-category">عام</div>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="#">الأمان على وسائل التواصل الاجتماعي</a>
+                            </h3>
+                            <p class="article-excerpt">
+                                نصائح وإرشادات مهمة لحماية خصوصيتك وأمانك على منصات التواصل الاجتماعي المختلفة.
+                            </p>
+                            <div class="article-meta">
+                                <span class="article-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    19 أغسطس 2025
+                                </span>
+                                <span class="article-read-time">
+                                    <i class="fas fa-clock"></i>
+                                    14 دقيقة قراءة
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <button class="btn btn-outline-primary btn-lg" id="loadMoreBtn">
+                        <i class="fas fa-plus me-2"></i>
+                        تحميل المزيد من المقالات
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h2 class="mb-3">اشترك في نشرتنا الإخبارية</h2>
+                    <p class="mb-4">احصل على أحدث المقالات والنصائح الأمنية مباشرة في بريدك الإلكتروني</p>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="بريدك الإلكتروني" required>
+                            <button class="btn btn-light" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                                اشتراك
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-brand">
+                        <h5>
+                            <i class="fas fa-shield-alt me-2"></i>
+                            SecureAware Pro
+                        </h5>
+                        <p>موقع تعليمي احترافي لتوعية المجتمع العربي بمخاطر التكنولوجيا والأمن الرقمي.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">روابط سريعة</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="articles.html">المقالات</a></li>
+                        <li><a href="email-security.html">حماية الإيميل</a></li>
+                        <li><a href="password-security.html">كلمات المرور</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="footer-title">المقالات</h6>
+                    <ul class="footer-links">
+                        <li><a href="email-security.html">حماية الإيميل</a></li>
+                        <li><a href="password-security.html">كلمات المرور</a></li>
+                        <li><a href="ai-privacy.html">مخاطر الذكاء الاصطناعي</a></li>
+                        <li><a href="articles.html">جميع المقالات</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="footer-title">تواصل معنا</h6>
+                    <p>aboodahmeda2030@gmail.com</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-copyright">
+                        &copy; 2025 SecureAware Pro. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-links-inline">
+                        <a href="#">سياسة الخصوصية</a>
+                        <a href="#">شروط الاستخدام</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Articles Page Specific Script -->
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('[data-filter]');
+            const articles = document.querySelectorAll('[data-category]');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.dataset.filter;
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter articles
+                    articles.forEach(article => {
+                        if (filter === 'all' || article.dataset.category === filter) {
+                            article.style.display = 'block';
+                            article.classList.add('fade-in');
+                        } else {
+                            article.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Search functionality
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                articles.forEach(article => {
+                    const title = article.querySelector('.article-title').textContent.toLowerCase();
+                    const excerpt = article.querySelector('.article-excerpt').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
+                        article.style.display = 'block';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Load more functionality
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            loadMoreBtn.addEventListener('click', function() {
+                // Simulate loading more articles
+                this.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>جاري التحميل...';
+                
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-check me-2"></i>تم تحميل جميع المقالات';
+                    this.disabled = true;
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
+

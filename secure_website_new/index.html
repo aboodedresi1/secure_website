@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureAware Pro - الأمان الرقمي الاحترافي</title>
+    <meta name="description" content="موقع تعليمي احترافي لتوعية المجتمع العربي بمخاطر التكنولوجيا والأمن الرقمي">
+    <meta name="keywords" content="أمان رقمي, حماية, هاتف, تواصل اجتماعي, هندسة اجتماعية, حماية الإيميل, كلمات المرور, الذكاء الاصطناعي">
+    
+    <!-- Bootstrap 5 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/general/favicon.ico">
+</head>
+<body data-theme="light">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="loading-text">SecureAware Pro</div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-shield-alt me-2"></i>
+                <span class="brand-text">SecureAware Pro</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">المميزات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articles">المقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#security-tips">نصائح الأمان</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">اتصل بنا</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-nav">
+                    <button class="btn btn-outline-primary me-2" id="themeToggle">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-globe me-1"></i>العربية
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-lang="ar">
+                                <i class="fas fa-flag me-2"></i>العربية
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="en">
+                                <i class="fas fa-flag me-2"></i>English
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="hero-content">
+                            <h1 class="hero-title">
+                                أمانك الرقمي
+                                <span class="text-gradient">أولويتنا</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                موقع تعليمي احترافي لتوعية المجتمع العربي بمخاطر التكنولوجيا والأمن الرقمي. 
+                                نقدم لك أحدث النصائح والحلول لحماية بياناتك وخصوصيتك في العصر الرقمي.
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="#articles" class="btn btn-primary btn-lg hero-btn">
+                                    <i class="fas fa-book-open me-2"></i>
+                                    استكشف المقالات
+                                </a>
+                                <a href="#security-tips" class="btn btn-outline-light btn-lg hero-btn">
+                                    <i class="fas fa-shield-alt me-2"></i>
+                                    نصائح الأمان
+                                </a>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number" data-count="1000">0</div>
+                                    <div class="stat-label">مقال تعليمي</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-count="50000">0</div>
+                                    <div class="stat-label">مستخدم محمي</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-count="99">0</div>
+                                    <div class="stat-label">% نسبة الأمان</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="hero-image">
+                            <div class="hero-image-container">
+                                <img src="assets/images/hero/cyber-security-hero.png" alt="الأمان الرقمي" class="img-fluid hero-main-image">
+                                <div class="floating-elements">
+                                    <div class="floating-icon" data-aos="zoom-in" data-aos-delay="800">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <div class="floating-icon" data-aos="zoom-in" data-aos-delay="1000">
+                                        <i class="fas fa-shield-virus"></i>
+                                    </div>
+                                    <div class="floating-icon" data-aos="zoom-in" data-aos-delay="1200">
+                                        <i class="fas fa-user-shield"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12" data-aos="fade-up">
+                    <h2 class="section-title">لماذا SecureAware Pro؟</h2>
+                    <p class="section-subtitle">نقدم لك حلول شاملة للأمان الرقمي مع أحدث التقنيات</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <h4 class="feature-title">حماية شاملة</h4>
+                        <p class="feature-description">
+                            نظام حماية متقدم ضد جميع أنواع التهديدات الإلكترونية والهجمات السيبرانية مع تحديثات مستمرة
+                        </p>
+                        <div class="feature-link">
+                            <a href="#" class="btn btn-outline-primary btn-sm">اعرف المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h4 class="feature-title">كشف الهندسة الاجتماعية</h4>
+                        <p class="feature-description">
+                            تقنيات متطورة لكشف ومنع محاولات الهندسة الاجتماعية والتصيد الاحتيالي بذكاء اصطناعي
+                        </p>
+                        <div class="feature-link">
+                            <a href="#" class="btn btn-outline-primary btn-sm">اعرف المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h4 class="feature-title">حماية الإيميل</h4>
+                        <p class="feature-description">
+                            دليل شامل لحماية البريد الإلكتروني من الاختراق والرسائل المزيفة مع أفضل الممارسات
+                        </p>
+                        <div class="feature-link">
+                            <a href="email-security.html" class="btn btn-outline-primary btn-sm">اعرف المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h4 class="feature-title">إدارة كلمات المرور</h4>
+                        <p class="feature-description">
+                            أفضل الممارسات لإنشاء وإدارة كلمات مرور قوية وآمنة مع أدوات التشفير المتقدمة
+                        </p>
+                        <div class="feature-link">
+                            <a href="password-security.html" class="btn btn-outline-primary btn-sm">اعرف المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4 class="feature-title">مخاطر الذكاء الاصطناعي</h4>
+                        <p class="feature-description">
+                            توعية شاملة بمخاطر نشر الصور والبيانات الشخصية على مواقع الذكاء الاصطناعي
+                        </p>
+                        <div class="feature-link">
+                            <a href="ai-privacy.html" class="btn btn-outline-primary btn-sm">اعرف المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 class="feature-title">أمان الهواتف</h4>
+                        <p class="feature-description">
+                            دليل شامل لحماية الهواتف الذكية من التطبيقات الخبيثة والاختراقات المتقدمة
+                        </p>
+                        <div class="feature-link">
+                            <a href="#" class="btn btn-outline-primary btn-sm">اعرف المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12" data-aos="fade-up">
+                    <h2 class="section-title">المقالات المميزة</h2>
+                    <p class="section-subtitle">أحدث المقالات في مجال الأمان الرقمي والحماية الإلكترونية</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="assets/images/articles/email-protection.jpg" alt="حماية الإيميل" class="img-fluid">
+                            <div class="article-category">حماية الإيميل</div>
+                            <div class="article-overlay">
+                                <a href="email-security.html" class="article-link">
+                                    <i class="fas fa-arrow-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article-content">
+                            <h5 class="article-title">الدليل الشامل لحماية البريد الإلكتروني</h5>
+                            <p class="article-description">
+                                تعلم كيفية حماية بريدك الإلكتروني من الاختراق والرسائل المزيفة مع أفضل الممارسات والأدوات المتقدمة
+                            </p>
+                            <div class="article-meta">
+                                <span class="article-date">
+                                    <i class="fas fa-calendar-alt me-1"></i>
+                                    24/08/2025
+                                </span>
+                                <span class="article-views">
+                                    <i class="fas fa-eye me-1"></i>
+                                    2,450
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="assets/images/articles/password-protection.png" alt="حماية كلمات المرور" class="img-fluid">
+                            <div class="article-category">كلمات المرور</div>
+                            <div class="article-overlay">
+                                <a href="password-security.html" class="article-link">
+                                    <i class="fas fa-arrow-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article-content">
+                            <h5 class="article-title">إنشاء كلمات مرور قوية وآمنة</h5>
+                            <p class="article-description">
+                                دليل متقدم لإنشاء وإدارة كلمات مرور قوية مع استخدام مديري كلمات المرور والتشفير المتقدم
+                            </p>
+                            <div class="article-meta">
+                                <span class="article-date">
+                                    <i class="fas fa-calendar-alt me-1"></i>
+                                    23/08/2025
+                                </span>
+                                <span class="article-views">
+                                    <i class="fas fa-eye me-1"></i>
+                                    3,120
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="assets/images/articles/ai-privacy.png" alt="مخاطر الذكاء الاصطناعي" class="img-fluid">
+                            <div class="article-category">الذكاء الاصطناعي</div>
+                            <div class="article-overlay">
+                                <a href="ai-privacy.html" class="article-link">
+                                    <i class="fas fa-arrow-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article-content">
+                            <h5 class="article-title">مخاطر نشر الصور على مواقع الذكاء الاصطناعي</h5>
+                            <p class="article-description">
+                                تعرف على المخاطر الحقيقية لنشر صورك الشخصية على مواقع الذكاء الاصطناعي وكيفية حماية خصوصيتك
+                            </p>
+                            <div class="article-meta">
+                                <span class="article-date">
+                                    <i class="fas fa-calendar-alt me-1"></i>
+                                    22/08/2025
+                                </span>
+                                <span class="article-views">
+                                    <i class="fas fa-eye me-1"></i>
+                                    4,890
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="articles.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-book-open me-2"></i>
+                    عرض جميع المقالات
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Tips Section -->
+    <section id="security-tips" class="security-tips-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12" data-aos="fade-up">
+                    <h2 class="section-title">نصائح الأمان السريعة</h2>
+                    <p class="section-subtitle">نصائح عملية وسريعة لحماية أفضل في العالم الرقمي</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h5 class="tip-title">تجنب الواي فاي العام</h5>
+                            <p class="tip-description">
+                                لا تستخدم شبكات الواي فاي العامة للمعاملات المصرفية أو الدخول لحساباتك الحساسة. استخدم VPN دائماً عند الضرورة.
+                            </p>
+                            <span class="tip-category">شبكات الإنترنت</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h5 class="tip-title">تحديث البرامج باستمرار</h5>
+                            <p class="tip-description">
+                                احرص على تحديث نظام التشغيل والبرامج باستمرار لسد الثغرات الأمنية وحماية جهازك من الهجمات الجديدة.
+                            </p>
+                            <span class="tip-category">تحديثات النظام</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h5 class="tip-title">تفعيل المصادقة الثنائية</h5>
+                            <p class="tip-description">
+                                فعل المصادقة الثنائية (2FA) على جميع حساباتك المهمة لإضافة طبقة حماية إضافية ضد الاختراق.
+                            </p>
+                            <span class="tip-category">أمان الحسابات</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-eye-slash"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h5 class="tip-title">احذر من الروابط المشبوهة</h5>
+                            <p class="tip-description">
+                                لا تضغط على الروابط المشبوهة في الرسائل أو البريد الإلكتروني. تحقق دائماً من مصدر الرابط قبل النقر عليه.
+                            </p>
+                            <span class="tip-category">التصيد الإلكتروني</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12" data-aos="fade-up">
+                    <h2 class="section-title">تواصل معنا</h2>
+                    <p class="section-subtitle">لديك سؤال أو تحتاج مساعدة؟ نحن هنا لمساعدتك</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form-container" data-aos="fade-up">
+                        <form class="contact-form" id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">الاسم</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">البريد الإلكتروني</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="subject" class="form-label">الموضوع</label>
+                                        <input type="text" class="form-control" id="subject" name="subject" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="message" class="form-label">الرسالة</label>
+                                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>
+                                        إرسال الرسالة
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>البريد الإلكتروني</h5>
+                        <p>aboodahmeda2030@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5>الهاتف</h5>
+                        <p>+967-771762855</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5>الموقع</h5>
+                        <p>   اليمن </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-brand">
+                        <h5>
+                            <i class="fas fa-shield-alt me-2"></i>
+                            SecureAware Pro
+                        </h5>
+                        <p>موقع تعليمي احترافي لتوعية المجتمع العربي بمخاطر التكنولوجيا والأمن الرقمي.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">روابط سريعة</h6>
+                    <ul class="footer-links">
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#features">المميزات</a></li>
+                        <li><a href="#articles">المقالات</a></li>
+                        <li><a href="#security-tips">نصائح الأمان</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="footer-title">المقالات</h6>
+                    <ul class="footer-links">
+                        <li><a href="email-security.html">حماية الإيميل</a></li>
+                        <li><a href="password-security.html">كلمات المرور</a></li>
+                        <li><a href="ai-privacy.html">مخاطر الذكاء الاصطناعي</a></li>
+                        <li><a href="articles.html">جميع المقالات</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="footer-title">اشترك في النشرة</h6>
+                    <p>احصل على أحدث نصائح الأمان الرقمي</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="بريدك الإلكتروني">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-copyright">
+                        &copy; 2025 SecureAware Pro. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-links-inline">
+                        <a href="#">سياسة الخصوصية</a>
+                        <a href="#">شروط الاستخدام</a>
+                        <a href="#contact">اتصل بنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

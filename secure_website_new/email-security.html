@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدليل الشامل لحماية البريد الإلكتروني - SecureAware Pro</title>
+    <meta name="description" content="تعلم كيفية حماية بريدك الإلكتروني من الاختراق والرسائل المزيفة مع أفضل الممارسات والأدوات المتقدمة">
+    <meta name="keywords" content="حماية الإيميل, أمان البريد الإلكتروني, التصيد الإلكتروني, Gmail, Outlook">
+    
+    <!-- Bootstrap 5 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/article.css">
+</head>
+<body data-theme="light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shield-alt me-2"></i>
+                <span class="brand-text">SecureAware Pro</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles.html">المقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="password-security.html">كلمات المرور</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ai-privacy.html">الذكاء الاصطناعي</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-nav">
+                    <button class="btn btn-outline-primary me-2" id="themeToggle">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="article-hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="article-meta-info">
+                            <span class="article-category">
+                                <i class="fas fa-envelope me-1"></i>
+                                حماية الإيميل
+                            </span>
+                            <span class="article-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                24 أغسطس 2025
+                            </span>
+                            <span class="article-read-time">
+                                <i class="fas fa-clock me-1"></i>
+                                15 دقيقة قراءة
+                            </span>
+                        </div>
+                        <h1 class="article-title">الدليل الشامل لحماية البريد الإلكتروني</h1>
+                        <p class="article-subtitle">
+                            تعلم كيفية حماية بريدك الإلكتروني من الاختراق والرسائل المزيفة مع أفضل الممارسات والأدوات المتقدمة للحفاظ على خصوصيتك وأمانك الرقمي
+                        </p>
+                        <div class="article-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">فريق SecureAware Pro</span>
+                                <span class="author-title">خبراء الأمان الرقمي</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="article-hero-image">
+                            <img src="assets/images/articles/email-protection.jpg" alt="حماية البريد الإلكتروني" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <main class="article-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <article class="article-body">
+                        <!-- Table of Contents -->
+                        <!-- <div class="table-of-contents">
+                            <h3>محتويات المقال</h3>
+                            <ul>
+                                <li><a href="#introduction">مقدمة حول أهمية حماية البريد الإلكتروني</a></li>
+                                <li><a href="#threats">التهديدات الشائعة للبريد الإلكتروني</a></li>
+                                <li><a href="#strong-passwords">إنشاء كلمات مرور قوية</a></li>
+                                <li><a href="#two-factor">المصادقة الثنائية</a></li>
+                                <li><a href="#phishing">التعرف على رسائل التصيد</a></li>
+                                <li><a href="#encryption">تشفير البريد الإلكتروني</a></li>
+                                <li><a href="#secure-providers">مزودي البريد الآمن</a></li>
+                                <li><a href="#best-practices">أفضل الممارسات</a></li>
+                                <li><a href="#tools">الأدوات والتطبيقات المفيدة</a></li>
+                                <li><a href="#conclusion">الخلاصة والتوصيات</a></li>
+                            </ul>
+                        </div> -->
+
+                        <!-- Introduction -->
+                        <section id="introduction" class="article-section">
+                            <h2>مقدمة حول أهمية حماية البريد الإلكتروني</h2>
+                            
+                            <p>في عصرنا الرقمي الحالي، أصبح البريد الإلكتروني أحد أهم وسائل التواصل والعمل، حيث يستخدمه مليارات الأشخاص حول العالم يومياً لإرسال واستقبال المعلومات الحساسة والمهمة. ومع هذا الاستخدام الواسع، تزداد المخاطر والتهديدات التي تستهدف حسابات البريد الإلكتروني، مما يجعل حمايتها أمراً بالغ الأهمية.</p>
+
+                            <p>تشير الإحصائيات الحديثة إلى أن أكثر من 90% من الهجمات السيبرانية تبدأ عبر البريد الإلكتروني، وأن المجرمين الإلكترونيين يرسلون أكثر من 3.4 مليار رسالة تصيد يومياً. هذه الأرقام المخيفة تؤكد على ضرورة اتخاذ إجراءات جدية لحماية حساباتنا الإلكترونية.</p>
+
+                            <div class="alert alert-warning">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                <strong>تحذير مهم:</strong> حساب البريد الإلكتروني المخترق يمكن أن يؤدي إلى سرقة الهوية، الاحتيال المالي، وفقدان البيانات الحساسة.
+                            </div>
+
+                            <p>البريد الإلكتروني ليس مجرد وسيلة تواصل، بل هو مفتاح الوصول إلى معظم حساباتك الأخرى على الإنترنت. فعندما تنسى كلمة مرور أي موقع، تستخدم بريدك الإلكتروني لاستعادتها. لذلك، حماية البريد الإلكتروني تعني حماية هويتك الرقمية بالكامل.</p>
+                        </section>
+
+                        <!-- Threats -->
+                        <section id="threats" class="article-section">
+                            <h2>التهديدات الشائعة للبريد الإلكتروني</h2>
+                            
+                            <h3>1. رسائل التصيد الإلكتروني (Phishing)</h3>
+                            <p>رسائل التصيد هي الطريقة الأكثر شيوعاً لاختراق حسابات البريد الإلكتروني. تتنكر هذه الرسائل في شكل رسائل رسمية من بنوك أو شركات معروفة، وتطلب منك إدخال معلوماتك الشخصية أو النقر على روابط خبيثة.</p>
+
+                            <div class="info-box">
+                                <h4>علامات رسائل التصيد:</h4>
+                                <ul>
+                                    <li>عناوين بريد إلكتروني مشبوهة أو مختلفة قليلاً عن الأصلية</li>
+                                    <li>أخطاء إملائية ونحوية واضحة</li>
+                                    <li>طلبات عاجلة لتحديث المعلومات الشخصية</li>
+                                    <li>روابط تؤدي إلى مواقع مشبوهة</li>
+                                    <li>مرفقات غير متوقعة</li>
+                                </ul>
+                            </div>
+
+                            <h3>2. البرامج الضارة والفيروسات</h3>
+                            <p>تنتشر البرامج الضارة عبر مرفقات البريد الإلكتروني، وقد تتخفى في شكل ملفات PDF أو Word أو حتى صور. عند فتح هذه المرفقات، تصيب البرامج الضارة جهازك وتسرق معلوماتك.</p>
+
+                            <h3>3. هجمات القوة الغاشمة (Brute Force)</h3>
+                            <p>يستخدم المهاجمون برامج آلية لتجربة آلاف كلمات المرور المختلفة حتى يجدوا الصحيحة. كلمات المرور الضعيفة تجعل هذه الهجمات أكثر نجاحاً.</p>
+
+                            <h3>4. التنصت على الشبكات</h3>
+                            <p>عند استخدام شبكات الواي فاي العامة غير المحمية، يمكن للمهاجمين التنصت على بياناتك، بما في ذلك معلومات تسجيل الدخول لبريدك الإلكتروني.</p>
+                        </section>
+
+                        <!-- Strong Passwords -->
+                        <section id="strong-passwords" class="article-section">
+                            <h2>إنشاء كلمات مرور قوية وآمنة</h2>
+                            
+                            <p>كلمة المرور هي خط الدفاع الأول لحماية بريدك الإلكتروني. كلمة المرور القوية يجب أن تكون معقدة بما فيه الكفاية لتقاوم محاولات الاختراق، ولكن في نفس الوقت قابلة للتذكر بالنسبة لك.</p>
+
+                            <h3>خصائص كلمة المرور القوية:</h3>
+                            <div class="password-requirements">
+                                <div class="requirement-item">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    <span>12 حرف على الأقل</span>
+                                </div>
+                                <div class="requirement-item">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    <span>مزيج من الأحرف الكبيرة والصغيرة</span>
+                                </div>
+                                <div class="requirement-item">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    <span>أرقام ورموز خاصة</span>
+                                </div>
+                                <div class="requirement-item">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    <span>تجنب المعلومات الشخصية</span>
+                                </div>
+                                <div class="requirement-item">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    <span>فريدة لكل حساب</span>
+                                </div>
+                            </div>
+
+                            <h3>طرق إنشاء كلمات مرور قوية:</h3>
+                            
+                            <h4>1. طريقة الجملة المرورية</h4>
+                            <p>استخدم جملة مفيدة وحولها إلى كلمة مرور. مثلاً: "أحب القراءة في الصباح مع القهوة!" تصبح "أQر!ص7مQ2023"</p>
+
+                            <h4>2. طريقة الاستبدال</h4>
+                            <p>استبدل بعض الأحرف برموز أو أرقام مشابهة. مثلاً: "أمان" تصبح "أم@ن2025!"</p>
+
+                            <div class="alert alert-info">
+                                <i class="fas fa-lightbulb me-2"></i>
+                                <strong>نصيحة:</strong> استخدم مدير كلمات المرور لإنشاء وحفظ كلمات مرور معقدة وفريدة لكل حساب.
+                            </div>
+                        </section>
+
+                        <!-- Two Factor Authentication -->
+                        <section id="two-factor" class="article-section">
+                            <h2>تفعيل المصادقة الثنائية (2FA)</h2>
+                            
+                            <p>المصادقة الثنائية تضيف طبقة حماية إضافية لحسابك، حيث تتطلب ليس فقط كلمة المرور، بل أيضاً رمز تحقق إضافي يتم إرساله إلى هاتفك أو إنشاؤه بواسطة تطبيق مخصص.</p>
+
+                            <h3>أنواع المصادقة الثنائية:</h3>
+                            
+                            <div class="two-factor-types">
+                                <div class="factor-type">
+                                    <div class="factor-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <h4>الرسائل النصية (SMS)</h4>
+                                    <p>يتم إرسال رمز التحقق عبر رسالة نصية إلى هاتفك المحمول.</p>
+                                    <div class="pros-cons">
+                                        <div class="pros">
+                                            <strong>المزايا:</strong> سهل الاستخدام، متاح للجميع
+                                        </div>
+                                        <div class="cons">
+                                            <strong>العيوب:</strong> عرضة للاختراق، يتطلب تغطية شبكة
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="factor-type">
+                                    <div class="factor-icon">
+                                        <i class="fas fa-qrcode"></i>
+                                    </div>
+                                    <h4>تطبيقات المصادقة</h4>
+                                    <p>تطبيقات مثل Google Authenticator أو Authy تولد رموز تحقق متغيرة.</p>
+                                    <div class="pros-cons">
+                                        <div class="pros">
+                                            <strong>المزايا:</strong> أكثر أماناً، يعمل بدون إنترنت
+                                        </div>
+                                        <div class="cons">
+                                            <strong>العيوب:</strong> يتطلب تطبيق إضافي، صعوبة في النسخ الاحتياطي
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="factor-type">
+                                    <div class="factor-icon">
+                                        <i class="fas fa-key"></i>
+                                    </div>
+                                    <h4>المفاتيح الأمنية</h4>
+                                    <p>أجهزة فيزيائية مثل YubiKey توفر أعلى مستوى من الأمان.</p>
+                                    <div class="pros-cons">
+                                        <div class="pros">
+                                            <strong>المزايا:</strong> أمان عالي جداً، مقاوم للتصيد
+                                        </div>
+                                        <div class="cons">
+                                            <strong>العيوب:</strong> تكلفة إضافية، قد يضيع أو يتلف
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>كيفية تفعيل المصادقة الثنائية:</h3>
+                            
+                            <div class="setup-steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Gmail</h4>
+                                        <p>اذهب إلى إعدادات الحساب > الأمان > التحقق بخطوتين</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Outlook</h4>
+                                        <p>اذهب إلى إعدادات الأمان > خيارات الأمان المتقدمة > التحقق بخطوتين</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Yahoo Mail</h4>
+                                        <p>اذهب إلى معلومات الحساب > أمان الحساب > التحقق بخطوتين</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Phishing Recognition -->
+                        <section id="phishing" class="article-section">
+                            <h2>التعرف على رسائل التصيد وتجنبها</h2>
+                            
+                            <p>رسائل التصيد الإلكتروني تتطور باستمرار وتصبح أكثر تطوراً وإقناعاً. تعلم كيفية التعرف عليها هو مهارة أساسية لحماية نفسك في العالم الرقمي.</p>
+
+                            <h3>أنواع رسائل التصيد:</h3>
+                            
+                            <div class="phishing-types">
+                                <div class="phishing-type">
+                                    <h4><i class="fas fa-university me-2"></i>التصيد المصرفي</h4>
+                                    <p>رسائل تتظاهر بأنها من البنوك تطلب تحديث معلومات الحساب أو تأكيد المعاملات.</p>
+                                    <div class="example">
+                                        <strong>مثال:</strong> "تم إيقاف حسابك مؤقتاً. انقر هنا لتأكيد هويتك."
+                                    </div>
+                                </div>
+
+                                <div class="phishing-type">
+                                    <h4><i class="fas fa-shopping-cart me-2"></i>التصيد التجاري</h4>
+                                    <p>رسائل تتظاهر بأنها من مواقع التسوق الإلكتروني أو شركات الشحن.</p>
+                                    <div class="example">
+                                        <strong>مثال:</strong> "طلبك عالق في الجمارك. ادفع الرسوم لاستلامه."
+                                    </div>
+                                </div>
+
+                                <div class="phishing-type">
+                                    <h4><i class="fas fa-users me-2"></i>التصيد الاجتماعي</h4>
+                                    <p>رسائل تتظاهر بأنها من مواقع التواصل الاجتماعي أو خدمات البريد الإلكتروني.</p>
+                                    <div class="example">
+                                        <strong>مثال:</strong> "محاولة دخول مشبوهة لحسابك. غير كلمة المرور فوراً."
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>كيفية التحقق من صحة الرسائل:</h3>
+                            
+                            <div class="verification-checklist">
+                                <div class="check-item">
+                                    <i class="fas fa-search me-2"></i>
+                                    <strong>فحص عنوان المرسل:</strong> تأكد من أن العنوان صحيح ومطابق للشركة الرسمية
+                                </div>
+                                <div class="check-item">
+                                    <i class="fas fa-link me-2"></i>
+                                    <strong>فحص الروابط:</strong> مرر الماوس فوق الرابط لرؤية الوجهة الحقيقية
+                                </div>
+                                <div class="check-item">
+                                    <i class="fas fa-language me-2"></i>
+                                    <strong>فحص اللغة:</strong> ابحث عن أخطاء إملائية أو نحوية غريبة
+                                </div>
+                                <div class="check-item">
+                                    <i class="fas fa-clock me-2"></i>
+                                    <strong>تجنب العجلة:</strong> لا تتسرع في الرد على الرسائل العاجلة
+                                </div>
+                                <div class="check-item">
+                                    <i class="fas fa-phone me-2"></i>
+                                    <strong>التحقق المباشر:</strong> اتصل بالشركة مباشرة للتأكد من صحة الرسالة
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Email Encryption -->
+                        <section id="encryption" class="article-section">
+                            <h2>تشفير البريد الإلكتروني</h2>
+                            
+                            <p>التشفير يحول رسائلك إلى رموز غير مفهومة لأي شخص لا يملك مفتاح فك التشفير. هذا يضمن أن رسائلك تبقى خاصة حتى لو تم اعتراضها.</p>
+
+                            <h3>أنواع التشفير:</h3>
+                            
+                            <div class="encryption-types">
+                                <div class="encryption-type">
+                                    <h4>التشفير أثناء النقل (TLS)</h4>
+                                    <p>يحمي رسائلك أثناء إرسالها من جهازك إلى الخادم. معظم مزودي البريد يستخدمونه افتراضياً.</p>
+                                    <div class="security-level">
+                                        <span class="level-indicator level-medium">مستوى الأمان: متوسط</span>
+                                    </div>
+                                </div>
+
+                                <div class="encryption-type">
+                                    <h4>التشفير من النهاية إلى النهاية (E2E)</h4>
+                                    <p>يشفر رسائلك بحيث لا يستطيع حتى مزود البريد قراءتها. فقط المرسل والمستقبل يمكنهما فك التشفير.</p>
+                                    <div class="security-level">
+                                        <span class="level-indicator level-high">مستوى الأمان: عالي</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>أدوات التشفير الشائعة:</h3>
+                            
+                            <div class="encryption-tools">
+                                <div class="tool">
+                                    <div class="tool-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h4>PGP/GPG</h4>
+                                    <p>معيار مفتوح المصدر للتشفير، يوفر أمان عالي ولكن يتطلب خبرة تقنية.</p>
+                                </div>
+
+                                <div class="tool">
+                                    <div class="tool-icon">
+                                        <i class="fas fa-envelope-open-text"></i>
+                                    </div>
+                                    <h4>S/MIME</h4>
+                                    <p>معيار تشفير مدمج في معظم عملاء البريد، سهل الاستخدام ولكن يتطلب شهادة رقمية.</p>
+                                </div>
+
+                                <div class="tool">
+                                    <div class="tool-icon">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <h4>ProtonMail</h4>
+                                    <p>خدمة بريد مشفرة بالكامل، سهلة الاستخدام مع تشفير تلقائي.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Secure Email Providers -->
+                        <section id="secure-providers" class="article-section">
+                            <h2>مزودي البريد الإلكتروني الآمن</h2>
+                            
+                            <p>اختيار مزود بريد إلكتروني آمن هو قرار مهم يؤثر على خصوصيتك وأمانك الرقمي. بعض المزودين يقدمون ميزات أمان متقدمة أكثر من غيرهم.</p>
+
+                            <div class="providers-comparison">
+                                <div class="provider">
+                                    <div class="provider-header">
+                                        <h3>ProtonMail</h3>
+                                        <div class="security-rating">
+                                            <span class="rating-stars">★★★★★</span>
+                                            <span class="rating-text">ممتاز</span>
+                                        </div>
+                                    </div>
+                                    <div class="provider-features">
+                                        <div class="feature"><i class="fas fa-check text-success"></i> تشفير من النهاية إلى النهاية</div>
+                                        <div class="feature"><i class="fas fa-check text-success"></i> مقره في سويسرا (قوانين خصوصية قوية)</div>
+                                        <div class="feature"><i class="fas fa-check text-success"></i> لا يحتفظ بسجلات</div>
+                                        <div class="feature"><i class="fas fa-check text-success"></i> مصدر مفتوح</div>
+                                        <div class="feature"><i class="fas fa-times text-danger"></i> مساحة محدودة في النسخة المجانية</div>
+                                    </div>
+                                </div>
+
+                                <div class="provider">
+                                    <div class="provider-header">
+                                        <h3>Tutanota</h3>
+                                        <div class="security-rating">
+                                            <span class="rating-stars">★★★★★</span>
+                                            <span class="rating-text">ممتاز</span>
+                                        </div>
+                                    </div>
+                                    <div class="provider-features">
+                                        <div class="feature"><i class="fas fa-check text-success"></i> تشفير شامل للبريد والتقويم</div>
+                                        <div class="feature"><i class="fas fa-check text-success"></i> مقره في ألمانيا</div>
+                                        <div class="feature"><i class="fas fa-check text-success"></i> أسعار معقولة</div>
+                                        <div class="feature"><i class="fas fa-check text-success"></i> مصدر مفتوح</div>
+                                        <div class="feature"><i class="fas fa-times text-danger"></i> واجهة أقل تطوراً</div>
+                                    </div>
+                                </div>
+
+                                <div class="provider">
+                                    <div class="provider-header">
+                                        <h3>Gmail</h3>
+                                        <div class="security-rating">
+                                            <span class="rating-stars">★★★☆☆</span>
+                                            <span class="rating-text">جيد</span>
+                                        </div>
+                                    </div>
+                                    <div class="provider-features">
+                                        <div class="feature"><i class="fas fa-check text-success"></i> ميزات أمان متقدمة</div>
+                                        <div class="feature"><i class="fas fa-check text-success"></i> مساحة كبيرة</div>
+                                        <div class="feature"><i class="fas fa-check text-success"></i> تكامل مع خدمات Google</div>
+                                        <div class="feature"><i class="fas fa-times text-danger"></i> يحلل المحتوى للإعلانات</div>
+                                        <div class="feature"><i class="fas fa-times text-danger"></i> لا يوفر تشفير من النهاية إلى النهاية</div>
+                                    </div>
+                                </div>
+
+                                <div class="provider">
+                                    <div class="provider-header">
+                                        <h3>Outlook</h3>
+                                        <div class="security-rating">
+                                            <span class="rating-stars">★★★☆☆</span>
+                                            <span class="rating-text">جيد</span>
+                                        </div>
+                                    </div>
+                                    <div class="provider-features">
+                                        <div class="feature"><i class="fas fa-check text-success"></i> تكامل مع Office 365</div>
+                                        <div class="feature"><i class="fas fa-check text-success"></i> ميزات أمان للشركات</div>
+                                        <div class="feature"><i class="fas fa-check text-success"></i> واجهة احترافية</div>
+                                        <div class="feature"><i class="fas fa-times text-danger"></i> مملوك لمايكروسوفت</div>
+                                        <div class="feature"><i class="fas fa-times text-danger"></i> لا يوفر تشفير من النهاية إلى النهاية</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Best Practices -->
+                        <section id="best-practices" class="article-section">
+                            <h2>أفضل الممارسات لأمان البريد الإلكتروني</h2>
+                            
+                            <div class="best-practices-grid">
+                                <div class="practice-item">
+                                    <div class="practice-icon">
+                                        <i class="fas fa-user-check"></i>
+                                    </div>
+                                    <h4>إدارة الحسابات</h4>
+                                    <ul>
+                                        <li>استخدم حسابات منفصلة للأغراض المختلفة</li>
+                                        <li>راجع إعدادات الخصوصية بانتظام</li>
+                                        <li>احذف الحسابات غير المستخدمة</li>
+                                        <li>فعل إشعارات تسجيل الدخول</li>
+                                    </ul>
+                                </div>
+
+                                <div class="practice-item">
+                                    <div class="practice-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <h4>إدارة الرسائل</h4>
+                                    <ul>
+                                        <li>لا تفتح مرفقات من مرسلين مجهولين</li>
+                                        <li>احذف الرسائل المشبوهة فوراً</li>
+                                        <li>استخدم فلاتر البريد العشوائي</li>
+                                        <li>تحقق من الروابط قبل النقر عليها</li>
+                                    </ul>
+                                </div>
+
+                                <div class="practice-item">
+                                    <div class="practice-icon">
+                                        <i class="fas fa-shield-virus"></i>
+                                    </div>
+                                    <h4>الحماية من البرامج الضارة</h4>
+                                    <ul>
+                                        <li>استخدم برنامج مكافحة فيروسات محدث</li>
+                                        <li>فعل فحص المرفقات التلقائي</li>
+                                        <li>تجنب تحميل البرامج من الرسائل</li>
+                                        <li>احتفظ بنسخ احتياطية من البيانات المهمة</li>
+                                    </ul>
+                                </div>
+
+                                <div class="practice-item">
+                                    <div class="practice-icon">
+                                        <i class="fas fa-wifi"></i>
+                                    </div>
+                                    <h4>أمان الشبكة</h4>
+                                    <ul>
+                                        <li>تجنب الواي فاي العام للبريد الحساس</li>
+                                        <li>استخدم VPN عند الضرورة</li>
+                                        <li>تأكد من تشفير الاتصال (HTTPS)</li>
+                                        <li>اخرج من حسابك عند الانتهاء</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Tools and Applications -->
+                        <section id="tools" class="article-section">
+                            <h2>الأدوات والتطبيقات المفيدة</h2>
+                            
+                            <h3>مديري كلمات المرور</h3>
+                            <div class="tools-grid">
+                                <div class="tool-card">
+                                    <h4>1Password</h4>
+                                    <p>مدير كلمات مرور شامل مع ميزات متقدمة للأمان</p>
+                                    <div class="tool-rating">★★★★★</div>
+                                </div>
+                                <div class="tool-card">
+                                    <h4>Bitwarden</h4>
+                                    <p>مدير كلمات مرور مفتوح المصدر مع نسخة مجانية ممتازة</p>
+                                    <div class="tool-rating">★★★★★</div>
+                                </div>
+                                <div class="tool-card">
+                                    <h4>LastPass</h4>
+                                    <p>مدير كلمات مرور شائع مع واجهة سهلة الاستخدام</p>
+                                    <div class="tool-rating">★★★★☆</div>
+                                </div>
+                            </div>
+
+                            <h3>تطبيقات المصادقة الثنائية</h3>
+                            <div class="tools-grid">
+                                <div class="tool-card">
+                                    <h4>Google Authenticator</h4>
+                                    <p>تطبيق بسيط وموثوق من Google</p>
+                                    <div class="tool-rating">★★★★☆</div>
+                                </div>
+                                <div class="tool-card">
+                                    <h4>Authy</h4>
+                                    <p>تطبيق متقدم مع نسخ احتياطي سحابي</p>
+                                    <div class="tool-rating">★★★★★</div>
+                                </div>
+                                <div class="tool-card">
+                                    <h4>Microsoft Authenticator</h4>
+                                    <p>تطبيق من مايكروسوفت مع تكامل ممتاز</p>
+                                    <div class="tool-rating">★★★★☆</div>
+                                </div>
+                            </div>
+
+                            <h3>أدوات فحص الأمان</h3>
+                            <div class="tools-grid">
+                                <div class="tool-card">
+                                    <h4>Have I Been Pwned</h4>
+                                    <p>موقع للتحقق من تسريب بياناتك في الاختراقات</p>
+                                    <div class="tool-rating">★★★★★</div>
+                                </div>
+                                <div class="tool-card">
+                                    <h4>VirusTotal</h4>
+                                    <p>خدمة فحص الملفات والروابط للبرامج الضارة</p>
+                                    <div class="tool-rating">★★★★★</div>
+                                </div>
+                                <div class="tool-card">
+                                    <h4>URLVoid</h4>
+                                    <p>أداة فحص الروابط المشبوهة</p>
+                                    <div class="tool-rating">★★★★☆</div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Conclusion -->
+                        <section id="conclusion" class="article-section">
+                            <h2>الخلاصة والتوصيات</h2>
+                            
+                            <p>حماية البريد الإلكتروني ليست مجرد خيار، بل ضرورة حتمية في عالمنا الرقمي اليوم. التهديدات تتطور باستمرار، ولكن بتطبيق الممارسات الصحيحة واستخدام الأدوات المناسبة، يمكنك حماية نفسك بشكل فعال.</p>
+
+                            <div class="key-takeaways">
+                                <h3>النقاط الرئيسية:</h3>
+                                <div class="takeaway-item">
+                                    <i class="fas fa-key text-primary"></i>
+                                    <span>استخدم كلمات مرور قوية وفريدة لكل حساب</span>
+                                </div>
+                                <div class="takeaway-item">
+                                    <i class="fas fa-shield-alt text-primary"></i>
+                                    <span>فعل المصادقة الثنائية على جميع حساباتك المهمة</span>
+                                </div>
+                                <div class="takeaway-item">
+                                    <i class="fas fa-eye text-primary"></i>
+                                    <span>كن حذراً من رسائل التصيد والروابط المشبوهة</span>
+                                </div>
+                                <div class="takeaway-item">
+                                    <i class="fas fa-lock text-primary"></i>
+                                    <span>فكر في استخدام مزود بريد مشفر للمعلومات الحساسة</span>
+                                </div>
+                                <div class="takeaway-item">
+                                    <i class="fas fa-sync text-primary"></i>
+                                    <span>راجع إعدادات الأمان بانتظام وحدثها</span>
+                                </div>
+                            </div>
+
+                            <div class="action-plan">
+                                <h3>خطة العمل:</h3>
+                                <div class="action-steps">
+                                    <div class="step-item">
+                                        <div class="step-number">1</div>
+                                        <div class="step-content">
+                                            <h4>الأسبوع الأول</h4>
+                                            <p>غير كلمات المرور الضعيفة وفعل المصادقة الثنائية</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="step-number">2</div>
+                                        <div class="step-content">
+                                            <h4>الأسبوع الثاني</h4>
+                                            <p>راجع إعدادات الخصوصية وامسح الحسابات غير المستخدمة</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="step-number">3</div>
+                                        <div class="step-content">
+                                            <h4>الأسبوع الثالث</h4>
+                                            <p>تعلم التعرف على رسائل التصيد وطرق تجنبها</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="step-number">4</div>
+                                        <div class="step-content">
+                                            <h4>الأسبوع الرابع</h4>
+                                            <p>فكر في التبديل إلى مزود بريد أكثر أماناً إذا لزم الأمر</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-success">
+                                <i class="fas fa-check-circle me-2"></i>
+                                <strong>تذكر:</strong> الأمان الرقمي رحلة وليس وجهة. ابق محدثاً بأحدث التهديدات وطرق الحماية.
+                            </div>
+                        </section>
+
+                        <!-- Article Footer -->
+                        <div class="article-footer">
+                            <div class="article-tags">
+                                <span class="tag">حماية الإيميل</span>
+                                <span class="tag">أمان رقمي</span>
+                                <span class="tag">التصيد الإلكتروني</span>
+                                <span class="tag">المصادقة الثنائية</span>
+                                <span class="tag">كلمات المرور</span>
+                                <span class="tag">التشفير</span>
+                            </div>
+                            
+                            <div class="article-share">
+                                <h5>شارك المقال:</h5>
+                                <div class="share-buttons">
+                                    <a href="#" class="share-btn facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="share-btn twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="share-btn linkedin">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="share-btn whatsapp">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <aside class="article-sidebar">
+                        <!-- Related Articles -->
+                        <div class="sidebar-widget">
+                            <h4>مقالات ذات صلة</h4>
+                            <div class="related-articles">
+                                <article class="related-article">
+                                    <div class="related-image">
+                                        <img src="assets/images/articles/password-protection.png" alt="كلمات المرور">
+                                    </div>
+                                    <div class="related-content">
+                                        <h5><a href="password-security.html">إنشاء كلمات مرور قوية وآمنة</a></h5>
+                                        <span class="related-date">23 أغسطس 2025</span>
+                                    </div>
+                                </article>
+                                
+                                <article class="related-article">
+                                    <div class="related-image">
+                                        <img src="assets/images/articles/ai-privacy.png" alt="الذكاء الاصطناعي">
+                                    </div>
+                                    <div class="related-content">
+                                        <h5><a href="ai-privacy.html">مخاطر نشر الصور على مواقع الذكاء الاصطناعي</a></h5>
+                                        <span class="related-date">22 أغسطس 2025</span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Newsletter -->
+                        <div class="sidebar-widget">
+                            <h4>اشترك في النشرة</h4>
+                            <p>احصل على أحدث نصائح الأمان الرقمي</p>
+                            <form class="newsletter-form">
+                                <input type="email" class="form-control mb-2" placeholder="بريدك الإلكتروني">
+                                <button type="submit" class="btn btn-primary w-100">اشترك الآن</button>
+                            </form>
+                        </div>
+
+                        <!-- Security Tips -->
+                        <div class="sidebar-widget">
+                            <h4>نصائح سريعة</h4>
+                            <div class="quick-tips">
+                                <div class="tip">
+                                    <i class="fas fa-lightbulb text-warning"></i>
+                                    <span>غير كلمة مرور بريدك كل 3-6 أشهر</span>
+                                </div>
+                                <div class="tip">
+                                    <i class="fas fa-lightbulb text-warning"></i>
+                                    <span>لا تستخدم نفس كلمة المرور لأكثر من حساب</span>
+                                </div>
+                                <div class="tip">
+                                    <i class="fas fa-lightbulb text-warning"></i>
+                                    <span>فعل إشعارات تسجيل الدخول</span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-brand">
+                        <h5>
+                            <i class="fas fa-shield-alt me-2"></i>
+                            SecureAware Pro
+                        </h5>
+                        <p>موقع تعليمي احترافي لتوعية المجتمع العربي بمخاطر التكنولوجيا والأمن الرقمي.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">روابط سريعة</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="articles.html">المقالات</a></li>
+                        <li><a href="password-security.html">كلمات المرور</a></li>
+                        <li><a href="ai-privacy.html">الذكاء الاصطناعي</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="footer-title">المقالات</h6>
+                    <ul class="footer-links">
+                        <li><a href="email-security.html">حماية الإيميل</a></li>
+                        <li><a href="password-security.html">كلمات المرور</a></li>
+                        <li><a href="ai-privacy.html">مخاطر الذكاء الاصطناعي</a></li>
+                        <li><a href="articles.html">جميع المقالات</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="footer-title">تواصل معنا</h6>
+                    <p>aboodahmeda2030@gmail.com</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-copyright">
+                        &copy; 2025 SecureAware Pro. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-links-inline">
+                        <a href="#">سياسة الخصوصية</a>
+                        <a href="#">شروط الاستخدام</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/article.js"></script>
+</body>
+</html>
+

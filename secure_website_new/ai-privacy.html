@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مخاطر نشر الصور على مواقع الذكاء الاصطناعي - SecureAware Pro</title>
+    <meta name="description" content="تعرف على المخاطر الحقيقية لنشر صورك الشخصية على مواقع الذكاء الاصطناعي وكيفية حماية خصوصيتك">
+    <meta name="keywords" content="الذكاء الاصطناعي, خصوصية الصور, حماية البيانات, AI privacy, deepfake">
+    
+    <!-- Bootstrap 5 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/article.css">
+</head>
+<body data-theme="light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shield-alt me-2"></i>
+                <span class="brand-text">SecureAware Pro</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles.html">المقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="email-security.html">حماية الإيميل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="password-security.html">كلمات المرور</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-nav">
+                    <button class="btn btn-outline-primary me-2" id="themeToggle">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="article-hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="article-meta-info">
+                            <span class="article-category">
+                                <i class="fas fa-robot me-1"></i>
+                                الذكاء الاصطناعي
+                            </span>
+                            <span class="article-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                22 أغسطس 2025
+                            </span>
+                            <span class="article-read-time">
+                                <i class="fas fa-clock me-1"></i>
+                                18 دقيقة قراءة
+                            </span>
+                        </div>
+                        <h1 class="article-title">مخاطر نشر الصور على مواقع الذكاء الاصطناعي</h1>
+                        <p class="article-subtitle">
+                            تعرف على المخاطر الحقيقية والمخفية لنشر صورك الشخصية على مواقع الذكاء الاصطناعي وكيفية حماية خصوصيتك وهويتك الرقمية من الاستغلال
+                        </p>
+                        <div class="article-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">فريق SecureAware Pro</span>
+                                <span class="author-title">خبراء الأمان الرقمي</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="article-hero-image">
+                            <img src="assets/images/articles/ai-privacy.png" alt="مخاطر الذكاء الاصطناعي" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <main class="article-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <article class="article-body">
+                        <!-- Table of Contents -->
+                        <!-- <div class="table-of-contents">
+                            <h3>محتويات المقال</h3>
+                            <ul>
+                                <li><a href="#introduction">مقدمة حول الذكاء الاصطناعي والخصوصية</a></li>
+                                <li><a href="#ai-image-processing">كيف تعالج مواقع الذكاء الاصطناعي الصور</a></li>
+                                <li><a href="#privacy-risks">المخاطر على الخصوصية</a></li>
+                                <li><a href="#deepfake-dangers">مخاطر تقنية Deepfake</a></li>
+                                <li><a href="#data-collection">جمع البيانات والتتبع</a></li>
+                                <li><a href="#commercial-exploitation">الاستغلال التجاري</a></li>
+                                <li><a href="#legal-implications">التداعيات القانونية</a></li>
+                                <li><a href="#protection-strategies">استراتيجيات الحماية</a></li>
+                                <li><a href="#safe-alternatives">البدائل الآمنة</a></li>
+                                <li><a href="#future-outlook">نظرة على المستقبل</a></li>
+                            </ul>
+                        </div> -->
+
+                        <!-- Introduction -->
+                        <section id="introduction" class="article-section">
+                            <h2>مقدمة حول الذكاء الاصطناعي والخصوصية</h2>
+                            
+                            <p>في السنوات الأخيرة، شهدنا ثورة حقيقية في مجال الذكاء الاصطناعي، خاصة في تقنيات معالجة الصور والتعرف على الوجوه. مواقع مثل FaceApp وLensa AI وRemini وغيرها الكثير أصبحت شائعة جداً، حيث تقدم خدمات مثيرة للإعجاب مثل تحسين جودة الصور، تغيير الأعمار، إضافة المؤثرات الفنية، وحتى إنشاء صور بورتريه احترافية.</p>
+
+                            <p>لكن وراء هذه الخدمات المجانية أو الرخيصة تكمن مخاطر جدية على خصوصيتنا وأماننا الرقمي. فعندما نرفع صورنا الشخصية إلى هذه المواقع، نحن لا نحصل فقط على نتيجة ممتعة أو مفيدة، بل نقدم أيضاً بياناتنا البيومترية الحساسة لشركات قد لا نعرف عنها الكثير، وقد تكون مقرها في دول لا تحترم قوانين حماية البيانات.</p>
+
+                            <div class="alert alert-danger">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                <strong>تحذير مهم:</strong> صورة وجهك هي بيانات بيومترية فريدة لا يمكن تغييرها مثل كلمة المرور. إذا تم اختراقها أو سوء استخدامها، فالضرر قد يكون دائماً.
+                            </div>
+
+                            <p>الإحصائيات تشير إلى أن أكثر من 3 مليارات صورة يتم رفعها يومياً على مواقع الذكاء الاصطناعي المختلفة، ومعظم المستخدمين لا يدركون ما يحدث لصورهم بعد الرفع. هل يتم حذفها؟ هل يتم تخزينها؟ هل يتم استخدامها لتدريب نماذج ذكاء اصطناعي جديدة؟ هل يتم بيعها لأطراف ثالثة؟</p>
+
+                            <div class="statistics-box">
+                                <h4>إحصائيات مخيفة:</h4>
+                                <div class="stat-grid">
+                                    <div class="stat-item">
+                                        <div class="stat-number">3 مليار</div>
+                                        <div class="stat-label">صورة ترفع يومياً على مواقع AI</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">75%</div>
+                                        <div class="stat-label">من المستخدمين لا يقرؤون شروط الاستخدام</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">90%</div>
+                                        <div class="stat-label">من مواقع AI تحتفظ بالصور</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>هذا المقال سيكشف لك الحقائق المخفية وراء هذه التطبيقات والمواقع، وسيوضح لك المخاطر الحقيقية التي تواجهك عند استخدامها، وأهم من ذلك، سيقدم لك استراتيجيات عملية لحماية نفسك وعائلتك من هذه المخاطر.</p>
+                        </section>
+
+                        <!-- AI Image Processing -->
+                        <section id="ai-image-processing" class="article-section">
+                            <h2>كيف تعالج مواقع الذكاء الاصطناعي الصور</h2>
+                            
+                            <p>لفهم المخاطر بشكل أفضل، علينا أولاً أن نفهم كيف تعمل هذه المواقع والتطبيقات من الناحية التقنية. العملية ليست بسيطة كما تبدو للمستخدم العادي.</p>
+
+                            <h3>مراحل معالجة الصور في مواقع الذكاء الاصطناعي:</h3>
+
+                            <div class="processing-stages">
+                                <div class="stage-item">
+                                    <div class="stage-number">1</div>
+                                    <div class="stage-content">
+                                        <h4>الرفع والاستقبال</h4>
+                                        <p>عندما ترفع صورتك، يتم إرسالها إلى خوادم الشركة. في هذه المرحلة، يتم حفظ الصورة الأصلية على الخوادم، حتى لو كان ذلك مؤقتاً حسب ادعاء الشركة.</p>
+                                        <div class="stage-details">
+                                            <strong>ما يحدث خلف الكواليس:</strong>
+                                            <ul>
+                                                <li>تحليل البيانات الوصفية للصورة (EXIF data)</li>
+                                                <li>استخراج معلومات الموقع إن وجدت</li>
+                                                <li>تحديد نوع الكاميرا والجهاز المستخدم</li>
+                                                <li>حفظ عنوان IP الخاص بك</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="stage-item">
+                                    <div class="stage-number">2</div>
+                                    <div class="stage-content">
+                                        <h4>التحليل والاستخراج</h4>
+                                        <p>يتم تحليل الصورة باستخدام خوارزميات التعرف على الوجوه لاستخراج النقاط المميزة والخصائص البيومترية.</p>
+                                        <div class="stage-details">
+                                            <strong>البيانات المستخرجة:</strong>
+                                            <ul>
+                                                <li>النقاط المميزة للوجه (68-468 نقطة)</li>
+                                                <li>المسافات بين ملامح الوجه</li>
+                                                <li>لون البشرة والعينين والشعر</li>
+                                                <li>العمر المقدر والجنس</li>
+                                                <li>التعبيرات والمشاعر</li>
+                                                <li>زاوية الوجه واتجاه النظر</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="stage-item">
+                                    <div class="stage-number">3</div>
+                                    <div class="stage-content">
+                                        <h4>المعالجة والتحويل</h4>
+                                        <p>يتم تطبيق الخوارزميات المطلوبة لإنتاج النتيجة المرغوبة، سواء كان تحسين الجودة أو إضافة مؤثرات أو تغيير الملامح.</p>
+                                        <div class="stage-details">
+                                            <strong>التقنيات المستخدمة:</strong>
+                                            <ul>
+                                                <li>الشبكات العصبية التوليدية (GANs)</li>
+                                                <li>خوارزميات التعلم العميق</li>
+                                                <li>تقنيات تحسين الصور</li>
+                                                <li>نماذج التعرف على الأنماط</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="stage-item">
+                                    <div class="stage-number">4</div>
+                                    <div class="stage-content">
+                                        <h4>التخزين والتعلم</h4>
+                                        <p>هذه هي المرحلة الأكثر خطورة والأقل وضوحاً للمستخدمين. معظم المواقع تحتفظ بالصور والبيانات المستخرجة لأغراض "تحسين الخدمة".</p>
+                                        <div class="stage-details">
+                                            <strong>ما يتم تخزينه:</strong>
+                                            <ul>
+                                                <li>الصورة الأصلية (في كثير من الحالات)</li>
+                                                <li>البصمة البيومترية للوجه</li>
+                                                <li>النتائج المعالجة</li>
+                                                <li>بيانات التفاعل والاستخدام</li>
+                                                <li>ربط البيانات بملفك الشخصي</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>نماذج الأعمال المخفية:</h3>
+                            <div class="business-models">
+                                <div class="model-card">
+                                    <div class="model-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h4>تجميع البيانات</h4>
+                                    <p>الهدف الأساسي هو جمع أكبر قدر من البيانات البيومترية لبناء قواعد بيانات ضخمة يمكن بيعها أو استخدامها لاحقاً.</p>
+                                </div>
+                                <div class="model-card">
+                                    <div class="model-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <h4>تدريب النماذج</h4>
+                                    <p>استخدام صورك لتدريب نماذج ذكاء اصطناعي جديدة دون علمك أو موافقتك، مما يزيد من قيمة الشركة التجارية.</p>
+                                </div>
+                                <div class="model-card">
+                                    <div class="model-icon">
+                                        <i class="fas fa-ad"></i>
+                                    </div>
+                                    <h4>الإعلانات المستهدفة</h4>
+                                    <p>تحليل ملامحك وتعبيراتك لفهم شخصيتك وتفضيلاتك، ثم استهدافك بإعلانات مخصصة أكثر فعالية.</p>
+                                </div>
+                                <div class="model-card">
+                                    <div class="model-icon">
+                                        <i class="fas fa-handshake"></i>
+                                    </div>
+                                    <h4>بيع البيانات</h4>
+                                    <p>بيع البيانات البيومترية والديموغرافية لشركات أخرى، بما في ذلك الحكومات وشركات التأمين والتسويق.</p>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-warning">
+                                <i class="fas fa-info-circle me-2"></i>
+                                <strong>حقيقة مهمة:</strong> معظم هذه الخدمات "المجانية" تكلف الشركات ملايين الدولارات لتطويرها وتشغيلها. إذا كانت مجانية لك، فأنت لست الزبون، بل أنت المنتج.
+                            </div>
+                        </section>
+
+                        <!-- Privacy Risks -->
+                        <section id="privacy-risks" class="article-section">
+                            <h2>المخاطر على الخصوصية</h2>
+                            
+                            <p>المخاطر على الخصوصية عند استخدام مواقع الذكاء الاصطناعي متعددة ومعقدة، وتتجاوز بكثير ما يتخيله معظم المستخدمين. هذه المخاطر لا تقتصر على اللحظة الحالية، بل قد تمتد لسنوات أو حتى عقود في المستقبل.</p>
+
+                            <h3>أنواع المخاطر على الخصوصية:</h3>
+
+                            <div class="privacy-risks-grid">
+                                <div class="risk-card high-risk">
+                                    <div class="risk-header">
+                                        <div class="risk-icon">
+                                            <i class="fas fa-fingerprint"></i>
+                                        </div>
+                                        <h4>سرقة الهوية البيومترية</h4>
+                                        <span class="risk-level">خطر عالي</span>
+                                    </div>
+                                    <div class="risk-content">
+                                        <p>وجهك هو بصمتك الفريدة. عندما تشاركه مع مواقع الذكاء الاصطناعي، فإنك تعطي هويتك البيومترية لجهات قد تسيء استخدامها.</p>
+                                        <div class="risk-examples">
+                                            <strong>أمثلة على سوء الاستخدام:</strong>
+                                            <ul>
+                                                <li>إنشاء حسابات مزيفة باسمك</li>
+                                                <li>تجاوز أنظمة التعرف على الوجوه</li>
+                                                <li>انتحال شخصيتك في المعاملات المالية</li>
+                                                <li>استخدام صورتك في أنشطة إجرامية</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="risk-card high-risk">
+                                    <div class="risk-header">
+                                        <div class="risk-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </div>
+                                        <h4>المراقبة والتتبع</h4>
+                                        <span class="risk-level">خطر عالي</span>
+                                    </div>
+                                    <div class="risk-content">
+                                        <p>بمجرد أن تصبح بصمة وجهك في قاعدة بيانات، يمكن استخدامها لتتبعك عبر كاميرات المراقبة في المدن والمتاجر والمطارات.</p>
+                                        <div class="risk-examples">
+                                            <strong>سيناريوهات التتبع:</strong>
+                                            <ul>
+                                                <li>تتبع تحركاتك في الأماكن العامة</li>
+                                                <li>مراقبة عاداتك الشرائية</li>
+                                                <li>تحليل شبكتك الاجتماعية</li>
+                                                <li>بناء ملف شخصي مفصل عن حياتك</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="risk-card medium-risk">
+                                    <div class="risk-header">
+                                        <div class="risk-icon">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <h4>التنميط النفسي والسلوكي</h4>
+                                        <span class="risk-level">خطر متوسط</span>
+                                    </div>
+                                    <div class="risk-content">
+                                        <p>تقنيات الذكاء الاصطناعي يمكنها تحليل ملامح وجهك لاستنتاج معلومات عن شخصيتك وحالتك النفسية وحتى ميولك السياسية.</p>
+                                        <div class="risk-examples">
+                                            <strong>ما يمكن استنتاجه:</strong>
+                                            <ul>
+                                                <li>مستوى الذكاء المقدر</li>
+                                                <li>الميول الجنسية</li>
+                                                <li>الحالة الصحية والنفسية</li>
+                                                <li>الانتماءات السياسية والدينية</li>
+                                                <li>القدرة على السداد والائتمان</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="risk-card medium-risk">
+                                    <div class="risk-header">
+                                        <div class="risk-icon">
+                                            <i class="fas fa-ban"></i>
+                                        </div>
+                                        <h4>التمييز الخوارزمي</h4>
+                                        <span class="risk-level">خطر متوسط</span>
+                                    </div>
+                                    <div class="risk-content">
+                                        <p>قد تستخدم الشركات والحكومات بياناتك البيومترية لاتخاذ قرارات تمييزية ضدك في التوظيف أو التأمين أو القروض.</p>
+                                        <div class="risk-examples">
+                                            <strong>أشكال التمييز:</strong>
+                                            <ul>
+                                                <li>رفض طلبات التوظيف بناء على الملامح</li>
+                                                <li>زيادة أقساط التأمين</li>
+                                                <li>رفض القروض المصرفية</li>
+                                                <li>منع الوصول لخدمات معينة</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="risk-card low-risk">
+                                    <div class="risk-header">
+                                        <div class="risk-icon">
+                                            <i class="fas fa-bullhorn"></i>
+                                        </div>
+                                        <h4>الاستهداف التسويقي المفرط</h4>
+                                        <span class="risk-level">خطر منخفض</span>
+                                    </div>
+                                    <div class="risk-content">
+                                        <p>استخدام تحليل ملامحك لاستهدافك بإعلانات مخصصة بشكل مفرط ومتطفل، مما يؤثر على قراراتك الشرائية.</p>
+                                        <div class="risk-examples">
+                                            <strong>أساليب الاستهداف:</strong>
+                                            <ul>
+                                                <li>إعلانات مبنية على حالتك المزاجية</li>
+                                                <li>منتجات تستهدف نقاط ضعفك</li>
+                                                <li>عروض تلاعب بمشاعرك</li>
+                                                <li>حملات تسويقية نفسية</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="risk-card high-risk">
+                                    <div class="risk-header">
+                                        <div class="risk-icon">
+                                            <i class="fas fa-globe"></i>
+                                        </div>
+                                        <h4>نقل البيانات عبر الحدود</h4>
+                                        <span class="risk-level">خطر عالي</span>
+                                    </div>
+                                    <div class="risk-content">
+                                        <p>كثير من مواقع الذكاء الاصطناعي مقرها في دول لا تحترم قوانين حماية البيانات، مما يعني أن صورك قد تنتهي في أيدي حكومات أجنبية.</p>
+                                        <div class="risk-examples">
+                                            <strong>المخاطر الجيوسياسية:</strong>
+                                            <ul>
+                                                <li>وصول الحكومات الأجنبية لبياناتك</li>
+                                                <li>استخدام بياناتك في الصراعات السياسية</li>
+                                                <li>عدم وجود حماية قانونية</li>
+                                                <li>صعوبة استرداد البيانات أو حذفها</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>دراسات حالة حقيقية:</h3>
+                            <div class="case-studies">
+                                <div class="case-study">
+                                    <h4>حالة FaceApp (2019)</h4>
+                                    <p>تطبيق FaceApp الروسي جمع ملايين الصور من المستخدمين حول العالم تحت ذريعة "تحسين الصور". لاحقاً، اكتُشف أن الشركة تحتفظ بجميع الصور وتنقلها إلى خوادم في روسيا، مما أثار مخاوف أمنية دولية.</p>
+                                    <div class="case-impact">
+                                        <strong>التأثير:</strong> أكثر من 150 مليون صورة تم جمعها وتخزينها دون موافقة واضحة من المستخدمين.
+                                    </div>
+                                </div>
+
+                                <div class="case-study">
+                                    <h4>حالة Clearview AI (2020)</h4>
+                                    <p>شركة Clearview AI جمعت أكثر من 3 مليارات صورة من مواقع التواصل الاجتماعي وباعت قاعدة البيانات لأجهزة الشرطة والحكومات، مما سمح بتتبع الأشخاص دون علمهم.</p>
+                                    <div class="case-impact">
+                                        <strong>التأثير:</strong> انتهاك خصوصية مليارات الأشخاص وإنشاء نظام مراقبة جماعية غير مسبوق.
+                                    </div>
+                                </div>
+
+                                <div class="case-study">
+                                    <h4>حالة Ever AI (2021)</h4>
+                                    <p>تطبيق Ever للصور استخدم الصور المرفوعة لتدريب نماذج ذكاء اصطناعي تجارية دون إذن المستخدمين، ثم باع هذه النماذج لشركات أخرى.</p>
+                                    <div class="case-impact">
+                                        <strong>التأثير:</strong> استغلال تجاري لصور المستخدمين وتحويلها إلى أرباح دون مشاركتهم في العوائد.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info">
+                                <i class="fas fa-lightbulb me-2"></i>
+                                <strong>نصيحة مهمة:</strong> تذكر أن البيانات البيومترية لا يمكن تغييرها مثل كلمة المرور. إذا تم اختراقها، فالضرر قد يكون دائماً ولا يمكن إصلاحه.
+                            </div>
+                        </section>
+
+                        <!-- Deepfake Dangers -->
+                        <section id="deepfake-dangers" class="article-section">
+                            <h2>مخاطر تقنية Deepfake</h2>
+                            
+                            <p>تقنية Deepfake تمثل واحدة من أخطر التهديدات الناشئة في عصر الذكاء الاصطناعي. هذه التقنية تستخدم خوارزميات التعلم العميق لإنشاء مقاطع فيديو أو صور مزيفة تبدو حقيقية تماماً، حيث يمكن وضع وجه شخص على جسم آخر أو جعله يقول أو يفعل أشياء لم يفعلها أبداً.</p>
+
+                            <p>المشكلة الكبرى أن مواقع الذكاء الاصطناعي التي تجمع صورك توفر المواد الخام المثالية لإنشاء محتوى Deepfake مقنع. كلما زادت جودة وكمية الصور المتاحة لوجهك، كلما أصبح من السهل إنشاء محتوى مزيف يصعب تمييزه عن الحقيقي.</p>
+
+                            <h3>كيف تعمل تقنية Deepfake:</h3>
+                            <div class="deepfake-process">
+                                <div class="process-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-images"></i>
+                                    </div>
+                                    <h4>جمع البيانات</h4>
+                                    <p>يحتاج المجرمون إلى مجموعة كبيرة من صورك من زوايا مختلفة وبتعبيرات متنوعة. مواقع الذكاء الاصطناعي توفر هذا بسهولة.</p>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <h4>تدريب النموذج</h4>
+                                    <p>يتم استخدام خوارزميات GAN لتدريب نموذج ذكاء اصطناعي على تقليد ملامح وجهك وتعبيراتك.</p>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+                                    <h4>إنشاء المحتوى</h4>
+                                    <p>يتم استخدام النموذج المدرب لوضع وجهك على أي فيديو أو صورة أخرى بشكل مقنع.</p>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-share-alt"></i>
+                                    </div>
+                                    <h4>النشر والاستغلال</h4>
+                                    <p>يتم نشر المحتوى المزيف على الإنترنت لأغراض الابتزاز أو التشهير أو الاحتيال.</p>
+                                </div>
+                            </div>
+
+                            <h3>أنواع مخاطر Deepfake:</h3>
+                            <div class="deepfake-risks">
+                                <div class="deepfake-risk-card">
+                                    <div class="risk-icon">
+                                        <i class="fas fa-user-secret text-danger"></i>
+                                    </div>
+                                    <h4>الابتزاز الجنسي</h4>
+                                    <p>وضع وجهك على محتوى إباحي واستخدامه لابتزازك مالياً أو عاطفياً. هذا النوع من الجرائم في تزايد مستمر.</p>
+                                    <div class="statistics">
+                                        <span class="stat">90% من مقاطع Deepfake إباحية</span>
+                                        <span class="stat">تستهدف النساء بشكل أساسي</span>
+                                    </div>
+                                </div>
+
+                                <div class="deepfake-risk-card">
+                                    <div class="risk-icon">
+                                        <i class="fas fa-gavel text-warning"></i>
+                                    </div>
+                                    <h4>التشهير والإضرار بالسمعة</h4>
+                                    <p>إنشاء مقاطع فيديو تظهرك وأنت تقول أو تفعل أشياء مسيئة أو مثيرة للجدل، مما يضر بسمعتك المهنية والشخصية.</p>
+                                    <div class="examples">
+                                        <strong>أمثلة:</strong>
+                                        <ul>
+                                            <li>خطابات سياسية مزيفة</li>
+                                            <li>اعترافات بجرائم لم ترتكبها</li>
+                                            <li>تصريحات مسيئة للآخرين</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="deepfake-risk-card">
+                                    <div class="risk-icon">
+                                        <i class="fas fa-dollar-sign text-success"></i>
+                                    </div>
+                                    <h4>الاحتيال المالي</h4>
+                                    <p>استخدام صوتك وصورتك المزيفة لخداع الأصدقاء والعائلة وطلب المال أو المعلومات الحساسة منهم.</p>
+                                    <div class="examples">
+                                        <strong>سيناريوهات شائعة:</strong>
+                                        <ul>
+                                            <li>مكالمات فيديو مزيفة لطلب المساعدة المالية</li>
+                                            <li>رسائل صوتية مزيفة لتأكيد المعاملات</li>
+                                            <li>انتحال الشخصية في المقابلات المصرفية</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="deepfake-risk-card">
+                                    <div class="risk-icon">
+                                        <i class="fas fa-briefcase text-info"></i>
+                                    </div>
+                                    <h4>الإضرار المهني</h4>
+                                    <p>إنشاء محتوى مزيف يظهرك في مواقف مهنية غير لائقة، مما قد يؤدي إلى فقدان وظيفتك أو فرصك المهنية.</p>
+                                    <div class="examples">
+                                        <strong>تأثيرات محتملة:</strong>
+                                        <ul>
+                                            <li>فقدان الوظيفة الحالية</li>
+                                            <li>صعوبة في العثور على عمل جديد</li>
+                                            <li>تدمير الشبكة المهنية</li>
+                                            <li>فقدان الثقة من العملاء</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>علامات التحذير من محتوى Deepfake:</h3>
+                            <div class="deepfake-detection">
+                                <h4>كيف تكتشف محتوى Deepfake:</h4>
+                                <div class="detection-grid">
+                                    <div class="detection-item">
+                                        <i class="fas fa-eye text-primary"></i>
+                                        <div class="detection-content">
+                                            <h5>حركة العيون</h5>
+                                            <p>العيون في مقاطع Deepfake قد تبدو غير طبيعية أو لا ترمش بشكل طبيعي</p>
+                                        </div>
+                                    </div>
+                                    <div class="detection-item">
+                                        <i class="fas fa-palette text-primary"></i>
+                                        <div class="detection-content">
+                                            <h5>لون البشرة</h5>
+                                            <p>قد يكون هناك اختلاف في لون البشرة بين الوجه والرقبة أو اليدين</p>
+                                        </div>
+                                    </div>
+                                    <div class="detection-item">
+                                        <i class="fas fa-compress text-primary"></i>
+                                        <div class="detection-content">
+                                            <h5>جودة الصورة</h5>
+                                            <p>الوجه قد يبدو أكثر ضبابية أو أقل وضوحاً من باقي الفيديو</p>
+                                        </div>
+                                    </div>
+                                    <div class="detection-item">
+                                        <i class="fas fa-volume-up text-primary"></i>
+                                        <div class="detection-content">
+                                            <h5>تزامن الصوت</h5>
+                                            <p>قد يكون هناك عدم تطابق بين حركة الشفاه والكلام</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>أدوات كشف Deepfake:</h3>
+                            <div class="detection-tools">
+                                <div class="tool-card">
+                                    <h4>Microsoft Video Authenticator</h4>
+                                    <p>أداة مجانية من مايكروسوفت لكشف التلاعب في مقاطع الفيديو</p>
+                                    <div class="tool-rating">★★★★☆</div>
+                                </div>
+                                <div class="tool-card">
+                                    <h4>Deepware Scanner</h4>
+                                    <p>خدمة أونلاين لفحص مقاطع الفيديو والكشف عن التزييف</p>
+                                    <div class="tool-rating">★★★☆☆</div>
+                                </div>
+                                <div class="tool-card">
+                                    <h4>Sensity AI</h4>
+                                    <p>منصة متقدمة لكشف المحتوى المزيف والتلاعب الرقمي</p>
+                                    <div class="tool-rating">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-danger">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                <strong>تحذير عاجل:</strong> إذا كنت ضحية لمحتوى Deepfake، لا تتردد في الإبلاغ للسلطات المختصة. هذا نوع من الجرائم الإلكترونية الخطيرة.
+                            </div>
+                        </section>
+
+                        <!-- Protection Strategies -->
+                        <section id="protection-strategies" class="article-section">
+                            <h2>استراتيجيات الحماية الشاملة</h2>
+                            
+                            <p>حماية نفسك من مخاطر مواقع الذكاء الاصطناعي تتطلب نهجاً متعدد الطبقات يجمع بين الوعي والتقنية والممارسات الآمنة. لا توجد حماية مطلقة، لكن يمكنك تقليل المخاطر بشكل كبير من خلال اتباع هذه الاستراتيجيات.</p>
+
+                            <h3>الطبقة الأولى: الوقاية الأساسية</h3>
+                            <div class="protection-layer">
+                                <div class="protection-strategy">
+                                    <div class="strategy-icon">
+                                        <i class="fas fa-ban text-danger"></i>
+                                    </div>
+                                    <h4>تجنب رفع الصور الشخصية</h4>
+                                    <p>أبسط وأفضل حماية هي عدم رفع صورك الشخصية على مواقع الذكاء الاصطناعي غير الموثوقة أو المجهولة المصدر.</p>
+                                    <div class="strategy-tips">
+                                        <strong>نصائح عملية:</strong>
+                                        <ul>
+                                            <li>استخدم صور أشخاص آخرين (بإذنهم) للتجربة</li>
+                                            <li>استخدم صور مشاهير أو شخصيات عامة</li>
+                                            <li>جرب الخدمة بصور مولدة بالذكاء الاصطناعي</li>
+                                            <li>استخدم صور كرتونية أو رسوم متحركة</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="protection-strategy">
+                                    <div class="strategy-icon">
+                                        <i class="fas fa-search text-primary"></i>
+                                    </div>
+                                    <h4>البحث والتحقق من المواقع</h4>
+                                    <p>قبل استخدام أي موقع ذكاء اصطناعي، ابحث عنه واقرأ سياسة الخصوصية وشروط الاستخدام بعناية.</p>
+                                    <div class="verification-checklist">
+                                        <strong>قائمة التحقق:</strong>
+                                        <div class="checklist-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>من هي الشركة المطورة؟</span>
+                                        </div>
+                                        <div class="checklist-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>أين مقر الشركة؟</span>
+                                        </div>
+                                        <div class="checklist-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>ما هي سياسة حفظ البيانات؟</span>
+                                        </div>
+                                        <div class="checklist-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>هل يتم مشاركة البيانات مع أطراف ثالثة؟</span>
+                                        </div>
+                                        <div class="checklist-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>هل يمكن حذف البيانات؟</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>الطبقة الثانية: الحماية التقنية</h3>
+                            <div class="protection-layer">
+                                <div class="protection-strategy">
+                                    <div class="strategy-icon">
+                                        <i class="fas fa-mask text-success"></i>
+                                    </div>
+                                    <h4>تشويش الصور قبل الرفع</h4>
+                                    <p>إذا كنت مضطراً لاستخدام صورتك، قم بتشويشها أو تعديلها بطريقة تجعل استخراج البيانات البيومترية صعباً.</p>
+                                    <div class="image-protection-methods">
+                                        <div class="method-item">
+                                            <i class="fas fa-adjust"></i>
+                                            <span>تغيير الإضاءة والتباين</span>
+                                        </div>
+                                        <div class="method-item">
+                                            <i class="fas fa-palette"></i>
+                                            <span>تطبيق فلاتر قوية</span>
+                                        </div>
+                                        <div class="method-item">
+                                            <i class="fas fa-crop"></i>
+                                            <span>قص أجزاء من الوجه</span>
+                                        </div>
+                                        <div class="method-item">
+                                            <i class="fas fa-random"></i>
+                                            <span>إضافة ضوضاء رقمية</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="protection-strategy">
+                                    <div class="strategy-icon">
+                                        <i class="fas fa-user-ninja text-info"></i>
+                                    </div>
+                                    <h4>استخدام VPN وهويات مؤقتة</h4>
+                                    <p>استخدم VPN لإخفاء موقعك وحسابات مؤقتة لتجنب ربط نشاطك بهويتك الحقيقية.</p>
+                                    <div class="anonymity-tools">
+                                        <div class="tool-item">
+                                            <strong>VPN موثوق:</strong>
+                                            <span>NordVPN, ExpressVPN, ProtonVPN</span>
+                                        </div>
+                                        <div class="tool-item">
+                                            <strong>بريد إلكتروني مؤقت:</strong>
+                                            <span>10MinuteMail, TempMail</span>
+                                        </div>
+                                        <div class="tool-item">
+                                            <strong>متصفح آمن:</strong>
+                                            <span>Tor Browser, Firefox مع إضافات الخصوصية</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>الطبقة الثالثة: المراقبة والاستجابة</h3>
+                            <div class="protection-layer">
+                                <div class="protection-strategy">
+                                    <div class="strategy-icon">
+                                        <i class="fas fa-search-plus text-warning"></i>
+                                    </div>
+                                    <h4>مراقبة ظهور صورك على الإنترنت</h4>
+                                    <p>راقب بانتظام ظهور صورك على الإنترنت للكشف المبكر عن أي سوء استخدام.</p>
+                                    <div class="monitoring-tools">
+                                        <div class="tool-card">
+                                            <h5>Google Images Reverse Search</h5>
+                                            <p>ابحث بصورتك على Google لرؤية أين تظهر</p>
+                                        </div>
+                                        <div class="tool-card">
+                                            <h5>TinEye</h5>
+                                            <p>محرك بحث متخصص في البحث العكسي للصور</p>
+                                        </div>
+                                        <div class="tool-card">
+                                            <h5>PimEyes</h5>
+                                            <p>محرك بحث متقدم للوجوه (استخدم بحذر)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="protection-strategy">
+                                    <div class="strategy-icon">
+                                        <i class="fas fa-shield-alt text-success"></i>
+                                    </div>
+                                    <h4>إعداد تنبيهات Google</h4>
+                                    <p>أنشئ تنبيهات Google باسمك وكلمات مفتاحية مرتبطة بك لتتلقى إشعارات عند ظهور محتوى جديد عنك.</p>
+                                    <div class="alert-setup">
+                                        <strong>كيفية الإعداد:</strong>
+                                        <ol>
+                                            <li>اذهب إلى Google Alerts</li>
+                                            <li>أدخل اسمك الكامل</li>
+                                            <li>أضف كلمات مفتاحية أخرى</li>
+                                            <li>اختر تكرار التنبيهات</li>
+                                            <li>فعل الإشعارات الفورية</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>خطة الاستجابة للطوارئ</h3>
+                            <div class="emergency-response">
+                                <h4>إذا اكتشفت سوء استخدام لصورك:</h4>
+                                <div class="response-steps">
+                                    <div class="step-item urgent">
+                                        <div class="step-number">1</div>
+                                        <div class="step-content">
+                                            <h5>توثيق الدليل</h5>
+                                            <p>التقط لقطات شاشة وسجل جميع الروابط والتفاصيل</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-item urgent">
+                                        <div class="step-number">2</div>
+                                        <div class="step-content">
+                                            <h5>الإبلاغ للمنصة</h5>
+                                            <p>أبلغ الموقع أو المنصة التي تستضيف المحتوى المسيء</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-item important">
+                                        <div class="step-number">3</div>
+                                        <div class="step-content">
+                                            <h5>التواصل مع محامي</h5>
+                                            <p>استشر محامي متخصص في قضايا الخصوصية والجرائم الإلكترونية</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-item important">
+                                        <div class="step-number">4</div>
+                                        <div class="step-content">
+                                            <h5>الإبلاغ للسلطات</h5>
+                                            <p>قدم بلاغ رسمي لشرطة الجرائم الإلكترونية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="protection-summary">
+                                <h4>ملخص الحماية:</h4>
+                                <div class="summary-grid">
+                                    <div class="summary-item prevention">
+                                        <i class="fas fa-shield-virus"></i>
+                                        <h5>الوقاية</h5>
+                                        <p>تجنب رفع الصور الشخصية على مواقع غير موثوقة</p>
+                                    </div>
+                                    <div class="summary-item detection">
+                                        <i class="fas fa-radar"></i>
+                                        <h5>الكشف</h5>
+                                        <p>راقب ظهور صورك على الإنترنت بانتظام</p>
+                                    </div>
+                                    <div class="summary-item response">
+                                        <i class="fas fa-ambulance"></i>
+                                        <h5>الاستجابة</h5>
+                                        <p>اتخذ إجراءات سريعة عند اكتشاف سوء الاستخدام</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Conclusion -->
+                        <section id="conclusion" class="article-section">
+                            <h2>الخلاصة والتوصيات النهائية</h2>
+                            
+                            <p>في عصر الذكاء الاصطناعي، أصبحت صورنا الشخصية أكثر قيمة وحساسية من أي وقت مضى. ما قد يبدو كتطبيق ممتع أو أداة مفيدة قد يخفي وراءه مخاطر جدية على خصوصيتنا وأماننا الرقمي. المعرفة والوعي هما أقوى أسلحتنا في مواجهة هذه التحديات.</p>
+
+                            <div class="key-takeaways">
+                                <h3>النقاط الرئيسية:</h3>
+                                <div class="takeaway-grid">
+                                    <div class="takeaway-item">
+                                        <i class="fas fa-exclamation-triangle text-danger"></i>
+                                        <div class="takeaway-content">
+                                            <h4>البيانات البيومترية لا تُستبدل</h4>
+                                            <p>وجهك هو هويتك الفريدة. إذا تم اختراقه، لا يمكنك تغييره مثل كلمة المرور</p>
+                                        </div>
+                                    </div>
+                                    <div class="takeaway-item">
+                                        <i class="fas fa-eye text-warning"></i>
+                                        <div class="takeaway-content">
+                                            <h4>لا شيء مجاني حقاً</h4>
+                                            <p>إذا كانت الخدمة مجانية، فأنت لست الزبون بل المنتج</p>
+                                        </div>
+                                    </div>
+                                    <div class="takeaway-item">
+                                        <i class="fas fa-shield-alt text-success"></i>
+                                        <div class="takeaway-content">
+                                            <h4>الوقاية خير من العلاج</h4>
+                                            <p>تجنب المشكلة من الأساس أسهل من محاولة حلها لاحقاً</p>
+                                        </div>
+                                    </div>
+                                    <div class="takeaway-item">
+                                        <i class="fas fa-users text-info"></i>
+                                        <div class="takeaway-content">
+                                            <h4>انشر الوعي</h4>
+                                            <p>شارك هذه المعرفة مع الأصدقاء والعائلة لحمايتهم أيضاً</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="future-outlook">
+                                <h3>نظرة على المستقبل:</h3>
+                                <p>مع تطور تقنيات الذكاء الاصطناعي، ستصبح هذه المخاطر أكثر تعقيداً وخطورة. نتوقع أن نرى:</p>
+                                <div class="future-trends">
+                                    <div class="trend-item">
+                                        <i class="fas fa-robot"></i>
+                                        <span>تقنيات Deepfake أكثر تطوراً وصعوبة في الكشف</span>
+                                    </div>
+                                    <div class="trend-item">
+                                        <i class="fas fa-gavel"></i>
+                                        <span>قوانين أكثر صرامة لحماية البيانات البيومترية</span>
+                                    </div>
+                                    <div class="trend-item">
+                                        <i class="fas fa-search"></i>
+                                        <span>أدوات أفضل لكشف المحتوى المزيف</span>
+                                    </div>
+                                    <div class="trend-item">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>وعي أكبر من المستخدمين بهذه المخاطر</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="final-recommendations">
+                                <h3>التوصيات النهائية:</h3>
+                                <div class="recommendations-list">
+                                    <div class="recommendation-item critical">
+                                        <div class="recommendation-priority">عاجل</div>
+                                        <div class="recommendation-content">
+                                            <h4>راجع حساباتك الحالية</h4>
+                                            <p>احذف صورك من المواقع التي لا تثق بها واطلب حذف بياناتك</p>
+                                        </div>
+                                    </div>
+                                    <div class="recommendation-item important">
+                                        <div class="recommendation-priority">مهم</div>
+                                        <div class="recommendation-content">
+                                            <h4>ثقف نفسك باستمرار</h4>
+                                            <p>ابق محدثاً بأحدث التهديدات وطرق الحماية</p>
+                                        </div>
+                                    </div>
+                                    <div class="recommendation-item moderate">
+                                        <div class="recommendation-priority">متوسط</div>
+                                        <div class="recommendation-content">
+                                            <h4>استخدم البدائل الآمنة</h4>
+                                            <p>ابحث عن تطبيقات ومواقع تحترم خصوصيتك</p>
+                                        </div>
+                                    </div>
+                                    <div class="recommendation-item ongoing">
+                                        <div class="recommendation-priority">مستمر</div>
+                                        <div class="recommendation-content">
+                                            <h4>راقب هويتك الرقمية</h4>
+                                            <p>اجعل مراقبة ظهور صورك على الإنترنت عادة شهرية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="call-to-action">
+                                <h3>اتخذ إجراء الآن:</h3>
+                                <div class="action-buttons">
+                                    <div class="action-item">
+                                        <i class="fas fa-trash-alt"></i>
+                                        <span>احذف صورك من المواقع المشبوهة</span>
+                                    </div>
+                                    <div class="action-item">
+                                        <i class="fas fa-bell"></i>
+                                        <span>فعل تنبيهات Google لاسمك</span>
+                                    </div>
+                                    <div class="action-item">
+                                        <i class="fas fa-share"></i>
+                                        <span>شارك هذا المقال مع أصدقائك</span>
+                                    </div>
+                                    <div class="action-item">
+                                        <i class="fas fa-book-open"></i>
+                                        <span>تعلم المزيد عن الأمان الرقمي</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-success">
+                                <i class="fas fa-check-circle me-2"></i>
+                                <strong>تذكر:</strong> حماية خصوصيتك في العصر الرقمي ليست مجرد خيار، بل ضرورة حتمية. ابدأ من اليوم واتخذ خطوات عملية لحماية نفسك وعائلتك.
+                            </div>
+                        </section>
+
+                        <!-- Article Footer -->
+                        <div class="article-footer">
+                            <div class="article-tags">
+                                <span class="tag">الذكاء الاصطناعي</span>
+                                <span class="tag">خصوصية الصور</span>
+                                <span class="tag">Deepfake</span>
+                                <span class="tag">حماية البيانات</span>
+                                <span class="tag">الأمان الرقمي</span>
+                                <span class="tag">البيانات البيومترية</span>
+                            </div>
+                            
+                            <div class="article-share">
+                                <h5>شارك المقال:</h5>
+                                <div class="share-buttons">
+                                    <a href="#" class="share-btn facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="share-btn twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="share-btn linkedin">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="share-btn whatsapp">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <aside class="article-sidebar">
+                        <!-- Related Articles -->
+                        <div class="sidebar-widget">
+                            <h4>مقالات ذات صلة</h4>
+                            <div class="related-articles">
+                                <article class="related-article">
+                                    <div class="related-image">
+                                        <img src="assets/images/articles/email-protection.jpg" alt="حماية الإيميل">
+                                    </div>
+                                    <div class="related-content">
+                                        <h5><a href="email-security.html">الدليل الشامل لحماية البريد الإلكتروني</a></h5>
+                                        <span class="related-date">24 أغسطس 2025</span>
+                                    </div>
+                                </article>
+                                
+                                <article class="related-article">
+                                    <div class="related-image">
+                                        <img src="assets/images/articles/password-protection.png" alt="كلمات المرور">
+                                    </div>
+                                    <div class="related-content">
+                                        <h5><a href="password-security.html">إنشاء كلمات مرور قوية وآمنة</a></h5>
+                                        <span class="related-date">23 أغسطس 2025</span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Privacy Checker -->
+                        <div class="sidebar-widget">
+                            <h4>فاحص الخصوصية</h4>
+                            <div class="privacy-checker">
+                                <p>تحقق من ظهور صورك على الإنترنت</p>
+                                <div class="checker-tools">
+                                    <a href="https://images.google.com" target="_blank" class="btn btn-outline-primary btn-sm mb-2">
+                                        <i class="fab fa-google me-1"></i>
+                                        Google Images
+                                    </a>
+                                    <a href="https://tineye.com" target="_blank" class="btn btn-outline-secondary btn-sm mb-2">
+                                        <i class="fas fa-search me-1"></i>
+                                        TinEye
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Security Tips -->
+                        <div class="sidebar-widget">
+                            <h4>نصائح سريعة</h4>
+                            <div class="quick-tips">
+                                <div class="tip">
+                                    <i class="fas fa-lightbulb text-warning"></i>
+                                    <span>لا ترفع صورك الشخصية على مواقع مجهولة</span>
+                                </div>
+                                <div class="tip">
+                                    <i class="fas fa-lightbulb text-warning"></i>
+                                    <span>اقرأ سياسة الخصوصية دائماً</span>
+                                </div>
+                                <div class="tip">
+                                    <i class="fas fa-lightbulb text-warning"></i>
+                                    <span>راقب ظهور صورك على الإنترنت</span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-brand">
+                        <h5>
+                            <i class="fas fa-shield-alt me-2"></i>
+                            SecureAware Pro
+                        </h5>
+                        <p>موقع تعليمي احترافي لتوعية المجتمع العربي بمخاطر التكنولوجيا والأمن الرقمي.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">روابط سريعة</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="articles.html">المقالات</a></li>
+                        <li><a href="email-security.html">حماية الإيميل</a></li>
+                        <li><a href="password-security.html">كلمات المرور</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="footer-title">المقالات</h6>
+                    <ul class="footer-links">
+                        <li><a href="email-security.html">حماية الإيميل</a></li>
+                        <li><a href="password-security.html">كلمات المرور</a></li>
+                        <li><a href="ai-privacy.html">مخاطر الذكاء الاصطناعي</a></li>
+                        <li><a href="articles.html">جميع المقالات</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="footer-title">تواصل معنا</h6>
+                    <p>aboodahmeda2030@gmail.com</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-copyright">
+                        &copy; 2025 SecureAware Pro. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-links-inline">
+                        <a href="#">سياسة الخصوصية</a>
+                        <a href="#">شروط الاستخدام</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/article.js"></script>
+</body>
+</html>
+
