@@ -1,4 +1,14 @@
-/articles     /articles.html     200
-/ai-privacy   /ai-privacy.html   200
-/email-security  /email-security.html 200
+# Basic redirects for clean URLs
+/ /index.html 200
+/articles /articles.html 200
+/email-security /email-security.html 200
 /password-security /password-security.html 200
+/ai-privacy /ai-privacy.html 200
+
+# Optional: Redirect all non-existent paths to index.html (SPA-like behavior)
+# This rule should be at the very end if used
+# /* /index.html 200
+
+# Optional: Custom 404 page
+# /404 /404.html 404
+
